@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npx eslint './src/**' --no-error-on-unmatched-pattern --fix
-git add
+git add .
