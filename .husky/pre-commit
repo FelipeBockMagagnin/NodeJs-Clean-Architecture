@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx eslint './src/**' --no-error-on-unmatched-pattern --fix
+npx lint-staged
+npm run test:staged
 git add .
