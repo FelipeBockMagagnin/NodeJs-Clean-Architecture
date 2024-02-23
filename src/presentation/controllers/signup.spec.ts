@@ -25,7 +25,6 @@ const makeEmailValidatorWithError = (): EmailValidator => {
   return new EmailValidatorStub()
 }
 
-
 const makeSut = (): SutTypes => {
   const emailValidatorStub = makeEmailValidator()
   const sut = new SignUpController(emailValidatorStub)
